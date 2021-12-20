@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tindog Webpage</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css "
+    />
+    <link rel="stylesheet" href="tindog.css" />
+  </head>
+
+  <body>
+    <section class="colored-section" id="title">
+      <div class="container-fluid col-sm-9">
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#"><h1>tindog</h1></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Download</a>
+            </div>
+          </div>
+        </nav>
+        <!--title-->
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="big-heading">Meet new and interesting dogs nearby.</h3>
+            <button class="btn1"><i class="fab fa-apple"></i> Download</button>
+            <button class="btn2">
+              <i class="fab fa-google-play"></i> Download
+            </button>
+          </div>
+          <div class="tilted-image col-lg-6">
+            <img class="top-img"
+              src="https://duttrohan0302.github.io/dec14th_tindog/images/iphone6.png"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--features-->
+    <section class="white-section" id="features">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <i class="fas fa-check-circle fa-4x"></i><br /><br />
+            <h3 class="feature-title">Easy to use</h3>
+            <p>So easy to use, even your dog could do it.</p>
+          </div>
+          <div class="feature-box col-lg-4">
+            <i class="far fa-dot-circle fa-4x"></i><br /><br />
+            <h3 class="feature-title">Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+          </div>
+          <div class="feature-box col-lg-4">
+            <i class="ico fas fa-heart fa-4x"></i><br /><br />
+            <h3 class="feature-title">Guaranteed to work.</h3>
+            <p>Find the love of your dogs life or your money back</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--testimonials-->
+    <section class="collered-section" id="testimonials">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <h2
+              style="
+                color: white;
+                margin: 60px;
+                margin-left: 100px;
+                margin-right: 100px;
+              "
+            >
+              I no longer have to sniff other dogs for love. I've found the
+              hottest Corgi on TinDog. Woof.
+            </h2>
+            <div class="ro">
+            <img
+              src="https://duttrohan0302.github.io/dec14th_tindog/images/dog-img.jpg "
+              class="w-30"
+              alt="..."
+            /><em>Pebbles, New York </em>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div>
+              <h2 style="color: white; margin: 60px">
+                My dog used to be so lonely, but with TinDog's help, they've
+                found the love of their life. I think.
+              </h2>
+              <img
+                style="align-items: center"
+                src="https://duttrohan0302.github.io/dec14th_tindog/images/lady-img.jpg "
+                class="w-30"
+                alt="..."
+              />
+              <em>Beverly, Illinois </em>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--press-->
+    <section class="collered-section" id="press">
+      <div class="q1">
+      <img
+        class="md"
+        src="data:image/png;base64,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 "
+        alt=""
+      />
+      <img
+        class="md"
+        src=" https://duttrohan0302.github.io/dec14th_tindog/images/tnw.png"
+        alt=""
+      />
+      <img
+        class="md"
+        src="https://duttrohan0302.github.io/dec14th_tindog/images/bizinsider.png "
+        alt=""
+      />
+      <img
+        class="md"
+        src=" https://duttrohan0302.github.io/dec14th_tindog/images/mashable.png"
+        alt=""
+      />
+      </div>
+    </section>
+    <!--pricing-->
+    <section class="white-section" id="pricing">
+      <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
+      <p class="prc">Simple and affordable price plans for your and your dog.</p>
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Chihuahua</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <button
+                class="btn btn-lg btn-block btn-outline-dark"
+                type="button"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Labrador</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49/mo</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <button
+                class="btn btn-lg btn-block btn-outline-dark"
+                type="button"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Mastiff</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$99/mo</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <button
+                class="btn btn-lg btn-block btn-outline-dark"
+                type="button"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--call to action-->
+    <section class="collered-section" id="cta">
+      <div class="row">
+        <div class="mj">
+          <h2 class="head1">Find the True Love of Your Dog's Life Today</h2>
+          <br /><br />
+          <button class="lw"><i class="fab fa-apple"></i>Download</button>
+          <button class="lw"><i class="fab fa-google-play"></i>Download</button>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <section class="white-section" id="footer">
+      <div class="row">
+        <div>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fas fa-envelope-square"></i>
+
+          <p>© Copyright MIT</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
