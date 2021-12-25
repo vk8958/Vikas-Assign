@@ -1,0 +1,42 @@
+.container{
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 40px;
+    height: 500px;
+
+
+}
+.percentage{
+    margin-left: 530px;
+
+}
+.percentage2{
+    margin-left: 500px;
+
+}
+.percentage3{
+margin-left: 490px;
+}
+img{
+    width: 140px;
+    margin-top: 10px;
+    margin-left:10px ;
+}
+    
+.details1{
+    font: large;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.progress{
+    height: 6px ! important;
+
+}
+.col{
+    font-size: larger;
+
+}
+p{
+    color: gray;
+    text-align: justify;
+}
