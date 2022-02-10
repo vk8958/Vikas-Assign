@@ -78,6 +78,8 @@ for(let i=0;i<winningSequences.length;i++){
     const val1=cell1.innerText
     const val2=cell2.innerText
     const val3=cell3.innerText
+
+    
 }
 }
 
