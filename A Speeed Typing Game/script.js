@@ -12,7 +12,7 @@ typePlace[0].addEventListener('input', () => {
 
         const character = arrayValue[index];
         
-        if (character == null) {
+        if (character[0] == null) {
             characterSpan.classList.remove('incorrect')
             characterSpan.classList.remove('correct')
             correct = false
@@ -71,7 +71,7 @@ function randomText() {
     content[0].innerHTML = ''
     quote.text.split('').forEach(character => {
         const characterSpan = document.createElement('span')
-        characterSpan.classList.add('incorrect')
+       /* characterSpan.classList.add('incorrect')*/
         characterSpan.innerText = character
         content[0].appendChild(characterSpan)
         
