@@ -32,17 +32,18 @@ typePlace[0].addEventListener('input', () => {
     }
 
 })
-
+let startTime;
 function timeRestart() {
+timer[0].innerText=0
+startTime=new Date()
+setInterval(function(){
+    timer[0].innerText=getTimerTime()
 
-    let tm = 0;
-    setInterval(function () {
-        tm = tm + 1
-        timer[0].innerHTML = tm;
-    }, 1000)
-
+},1000)
 }
-
+function getTimerTime(){
+  return Math.floor( (new Date()-startTime)/1000)
+}
 
 let apiQuotes = []
 
@@ -75,11 +76,12 @@ function randomText() {
         content[0].appendChild(characterSpan)
         
     })
-    typePlace[0].value=null 
+    typePlace[0].value=null
+    timeRestart()
 }
 
 
 
-timer[0].value = null;
+
 getQuotes()
 timeRestart()
