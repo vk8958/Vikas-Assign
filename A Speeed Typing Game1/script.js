@@ -66,16 +66,16 @@ function randomText() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)]
     console.log(quote)
 
-    /*content[0].textContent = quote.text;*/
-    content[0].innerHTML = ''
-    quote.text.split('').forEach(character => {
-        const characterSpan = document.createElement('span')
-       /* characterSpan.classList.add('incorrect')*/
-        characterSpan.innerText = character
-        content[0].appendChild(characterSpan)
-        
-    })
-    typePlace[0].value=null 
+    content[0].textContent = quote.text;
+ content[0].innerHTML = ''
+ quote.text.split('').forEach(character => {
+     const characterSpan = document.createElement('span')
+  
+     characterSpan.innerText = character
+     content[0].appendChild(characterSpan)
+     
+ })
+ typePlace[0].value=null 
 }
 
 
@@ -83,3 +83,5 @@ function randomText() {
 timer[0].value = null;
 getQuotes()
 timeRestart()
+
+
