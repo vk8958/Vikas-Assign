@@ -12,7 +12,7 @@ typePlace[0].addEventListener('input', () => {
 
         const character = arrayValue[index];
         
-        if (character[0] == null) {
+        if (character == null) {
             characterSpan.classList.remove('incorrect')
             characterSpan.classList.remove('correct')
             correct = false
@@ -32,18 +32,17 @@ typePlace[0].addEventListener('input', () => {
     }
 
 })
-let startTime;
-function timeRestart() {
-timer[0].innerText=0
-startTime=new Date()
-setInterval(function(){
-    timer[0].innerText=getTimerTime()
 
-},1000)
+function timeRestart() {
+
+    let tm = 0;
+    setInterval(function () {
+        tm = tm + 1
+        timer[0].innerHTML = tm;
+    }, 1000)
+
 }
-function getTimerTime(){
-  return Math.floor( (new Date()-startTime)/1000)
-}
+
 
 let apiQuotes = []
 
@@ -76,12 +75,11 @@ function randomText() {
         content[0].appendChild(characterSpan)
         
     })
-    typePlace[0].value=null
-    timeRestart()
+    typePlace[0].value=null 
 }
 
 
 
-
+timer[0].value = null;
 getQuotes()
 timeRestart()
