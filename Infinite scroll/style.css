@@ -1,0 +1,44 @@
+html {
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: rgb(0, 0,0);
+    background-color: whitesmoke;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.image-container{
+    margin: 10px 10%;
+}
+
+.image-container img{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+}
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 25px;
+
+    }
+    .image-container{
+        margin: 10px;
+    }
+    .image-container img{
+        width: 100%;
+        margin: 5px;
+    }
+}

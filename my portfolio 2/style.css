@@ -93,8 +93,7 @@ h5{
        box-sizing: border-box;
        margin: 0;
        padding: 0;
-       margin-left: 20px;
-       margin-right: 20px;
+      
        width: 100vw;
        background-color: rgba(0,0,0,0.6);
         color: white;
@@ -102,7 +101,13 @@ h5{
     #left-section{
         display: none;
     }
+    .forminscreen{
+    box-sizing: border-box;
+    padding: 30px;
+    margin-right: 3px;
+    width: 100vw;
    
+}
 }
 /*PAGE-2 EDUCATION*/
 #container-2{

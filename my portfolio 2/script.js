@@ -6,8 +6,7 @@ const others = document.querySelectorAll('.othersl')
 
 const slideLength = about.querySelectorAll('#right-section')
 
+const navItem=document.querySelectorAll('.nav-link')
+navItem.addEventListener('click', function (){
 
-about.addEventListener('click', () => changeSlide())
-const changeSlide = () => {
-document.querySelectorAll('#right-section').addClassList()
-}
+})
