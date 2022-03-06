@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom</title>
+
+
+
+  <style>
+
+
+
+  </style>
+
+
+
+
+
+</head>
+
+<body>
+
+  <p id="demo">vikas</p>
+  <img id="atribute" alt="">
+
+
+  <script>
+
+        //document.getElementById('demo').innerHTML = 'Hello World'
+        // document.getElementById('demo').innerHTML = `<h1>vikas</h1>` //by string literals we can change tag also
+
+
+
+        // document.getElementsByTagName("p")='hello worls by tag name' learn how to use by tag name
+
+
+        document.getElementById("atribute").attributes='sec'
+    /*  do this thing again print 1 to 10 number in tags
+    
+    function  printNumberInTag() {
+          for (let i = 1; i <= 10; i++) {
+             // console.log(i)
+              const getFirst = document.getElementById('demo').innerHTML  = `<h1>${i}</h1>`
+          }
+      }
+      printNumberInTag()*/
+
+    /*1.***
+       getElementById is a method 
+       innerHtml is a property
+       The innerHTML property can be used to get or change any HTML element, including <html> and <body>.
+      */
+
+
+
+
+    /*  The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+    
+          With the object model, JavaScript gets all the power it needs to create dynamic HTML
+            
+            JavaScript can change all the HTML elements in the page
+            JavaScript can change all the HTML attributes in the page
+            JavaScript can change all the CSS styles in the page
+            JavaScript can remove existing HTML elements and attributes
+            JavaScript can add new HTML elements and attributes
+            JavaScript can react to all existing HTML events in the page
+            JavaScript can create new HTML events in the page
+    
+    
+    
+    
+       What is the HTML DOM?
+    
+    
+           The HTML DOM is a standard object model and programming interface for HTML. It defines:
+    
+                 The HTML elements as objects
+                 The properties of all HTML elements
+                 The methods to access all HTML elements
+                 The events for all HTML elements
+
+
+
+                 HTML DOM methods are actions you can perform (on HTML Elements).
+                 HTML DOM properties are values (of HTML Elements) that you can set or change.
+
+
+               A property is a value that you can get or set (like changing the content of an HTML element).
+
+               A method is an action you can do (like add or deleting an HTML element).
+
+
+
+               *****Changing HTML Elements*****
+
+                  Property	                                   Description
+
+                  element.innerHTML =  new html content	       Change the inner HTML of an element
+                  element.attribute = new value        	       Change the attribute value of an HTML element
+                  element.style.property = new style	         Change the style of an HTML element
+
+                  Method	                                     Description
+
+                  element.setAttribute(attribute, value)     	 Change the attribute value of an HTML element
+
+
+
+
+
+                  ******Adding and Deleting Elements*****
+
+                      Method	                                Description
+                      document.createElement(element)	        Create an HTML element
+                      document.removeChild(element)	          Remove an HTML element
+                      document.appendChild(element)	          Add an HTML element
+                      document.replaceChild(new, old)	        Replace an HTML element
+                      document.write(text)	                  Write into the HTML output stream
+
+
+
+                     **** Adding Events Handlers*****
+                      Method	                                                Description
+                      document.getElementById(id).onclick = function(){code}	Adding event handler code to an onclick event
+
+
+
+            */
+
+
+  </script>
+
+</body>
+
+</html>

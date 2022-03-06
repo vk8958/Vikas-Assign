@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change style</title>
+</head>
+
+<body id="body">
+
+    <button id="btn" onclick="changeColor()">
+        CLICK
+    </button>
+
+
+    <script>
+
+        // element.style.property = new style	       Change the style of an HTML element
+        //As you can see, the JavaScript syntax for setting CSS properties is slightly different than CSS (backgroundColor instead of background-color).
+        const body = document.getElementById('body')
+
+        const btn = document.getElementById('btn')
+
+        body.style.width = '100vw'
+        body.style.height = '100vh'
+        body.style.display = 'flex'
+        body.style.alignItems = 'center'
+        body.style.justifyContent = 'center'
+
+        btn.style.backgroundColor = 'orange'   //we will use camel case here  backgroundColor  not like this background-Color
+
+        function changeColor() {
+            body.style.backgroundColor = 'grey'
+        }
+
+        //we can also set style by using setAttribute
+        //we can access head by using get elementByTagName 
+    </script>
+</body>
+
+</html>

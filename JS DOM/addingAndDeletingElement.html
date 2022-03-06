@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding and Deleting Elements</title>
+</head>
+
+<body>
+
+    <div id="div1">The text above has been created dynamically.</div>
+
+
+    <script>
+
+
+
+        //1.document.createElement(element)
+        document.body.onload = addElement;
+
+
+        function addElement() {
+
+
+            //creating a div element 
+            const newDiv = document.createElement('div');
+
+
+            //and  give it some content 
+            const newContent = document.createTextNode('Hi guys how are u')
+
+
+            // add the text node to the newly created div
+           const newOne= newDiv.appendChild(newContent)
+            document.getElementById('div1').appendChild(newOne)
+        }
+
+
+
+
+
+
+
+
+        /*
+          Adding and Deleting Elements
+    
+    
+    
+          Method	                                       Description
+    
+        1.document.createElement(element)	           Create an HTML element
+    
+        2.document.removeChild(element)	               Remove an HTML element
+    
+        3.document.appendChild(element)	               Add an HTML element
+    
+        4.document.replaceChild(new, old)	           Replace an HTML element
+    
+        5.document.write(text)	                       Write into the HTML output stream
+    
+    
+        */
+    </script>
+</body>
+
+</html>

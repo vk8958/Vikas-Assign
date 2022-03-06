@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change Atribute </title>
+</head>
+
+<body>
+    <div>
+
+        <img id='image'
+            src="https://thumbs.dreamstime.com/b/software-developer-holds-pen-pointing-to-computer-screen-analyzing-code-software-developer-holds-pen-151660973.jpg"
+            alt=""><br>
+
+        <hr>
+        <button onclick="changeAtribute()" id="setAtribute">
+            Change Atribute
+        </button>
+        <button onclick="changeAtributeAgain()" id="setAtribute">
+            Change Atribute
+        </button>
+    </div>
+
+    <script>
+
+        //element.setAttribute(attribute, value)	  Change the attribute value of an HTML element
+
+
+
+        const b = document.getElementById('setAtribute')
+        const img = document.getElementById('image')  //getting element 
+
+
+        function changeAtribute() {
+
+            img.setAttribute('src', 'https://st2.depositphotos.com/1003697/8476/i/950/depositphotos_84761634-stock-photo-startup-business-software-developer-working.jpg')
+           
+            //by using setAttributi here we are changing atribute as well as value of that artibute 
+        }
+
+
+        function changeAtributeAgain() {
+
+            img.setAttribute('src', 'https://thumbs.dreamstime.com/b/software-developer-holds-pen-pointing-to-computer-screen-analyzing-code-software-developer-holds-pen-151660973.jpg')
+        
+        }
+
+
+       //    document.getElementById("myImage").src = "landscape.jpg"  we can do like this
+    </script>
+</body>
+
+</html>
