@@ -1,0 +1,43 @@
+
+body{
+    background-color: rgb(71, 148, 105);
+   
+    
+    display: flex;
+    justify-content: center;
+   
+}
+.container{
+ 
+
+}
+.uper-container{
+    background-color: darkslategrey;
+  display: flex;
+
+}
+.content{
+    margin-left: 20px;
+    margin-top: 20px ;
+}
+.content h2,div ,i,h4,button{
+    color:rgb(71, 148, 105) ;
+}
+.circle{
+    display: flex;
+   margin-top: 50px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+ 
+   width: 100vw;
+}
+.circle1, .circle2, .circle3{
+    background-color:rgb(15, 172, 106) ;
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    border-radius: 50%;
+    color: aliceblue;
+   
+}

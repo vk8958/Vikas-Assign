@@ -1,0 +1,30 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2021/08/01/12/58/beach-6514331_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    overflow: hidden;
+    color: rgb(132, 228, 218);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+     align-items: center;
+}
+.container{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+.btn{
+    background-color: transparent;
+    height: 50px;
+    width: 150px;
+    border-color: rgb(132, 228, 218);
+    border-radius: 10px;
+    color: rgb(132, 228, 218);
+    font-size: 20px
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(132, 228, 218);
+    color: white;
+}

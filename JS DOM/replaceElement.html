@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="div1">The text above has been created dynamically.</div>
+
+
+    <div id="div2">
+        <h3 class="replace">vikas</h3>
+        <button onclick="removeChild1()" class="btn">CLICK ME TO REMOVE</button>
+    </div>
+
+    <script>
+        const element = document.getElementById('div2').children[0]  //like this we can accses first child of that div
+        console.log(element)
+
+        const content = document.getElementById('div2').children[0].innerHTML
+        console.log(content) //like this we can get content inside that element
+
+        const newTag = document.createElement('h6')
+        newTag.innerHTML = 'HI I AM VIKAS WHAT ABOUT YOU GUYS '
+        console.log(newTag)
+        function removeChild1() {
+            element.replaceChild(newTag.innerText, content)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM </title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        button {
+            background-color: lightcoral;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <button class="btn">CLICK</button>
+    </div>
+    <script>
+        const btn = document.getElementById('container').children[0]
+        console.log(btn)
+        btn.onclick = function () {
+            document.body.style.backgroundColor = 'pink'
+        }
+    </script>
+</body>
+
+</html>

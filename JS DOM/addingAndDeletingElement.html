@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding and Deleting Elements</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,29 +19,57 @@
     <div id="div1">The text above has been created dynamically.</div>
 
 
+    <div id="div2">
+        <h3 class="remove">vikas</h3>
+        <button onclick="removeChild1()" class="btn">CLICK ME TO REMOVE</button>
+    </div>
+
     <script>
+        const div = document.getElementById('div1')
+
+
+        //*********CREATE CHILD AND APPEND CHILD
+        const creartedElement = document.createElement('p')  //here element is created 
+        console.log(creartedElement)
+        creartedElement.innerText = 'RAHUL IS A GOOD BOY'  //here some text is writen inside element 
+        div.appendChild(creartedElement)  //here that element is appanded to that div 
+
+
+        const div2 = document.getElementById('div2')
+        const created = document.createElement('h1') //here we are creating 
+        created.innerText = 'And Also I Am hard working'
+        div2.appendChild(created)
+
+        //*****REMOVE CHILD*******
+
+        function removeChild1() {
+
+            div2.removeChild(created)
+
+        }
+        //  hera we are removing
 
 
 
         //1.document.createElement(element)
-        document.body.onload = addElement;
+       // document.body.onload = addElement;
 
 
-        function addElement() {
-
-
-            //creating a div element 
-            const newDiv = document.createElement('div');
-
-
-            //and  give it some content 
-            const newContent = document.createTextNode('Hi guys how are u')
-
-
-            // add the text node to the newly created div
-           const newOne= newDiv.appendChild(newContent)
-            document.getElementById('div1').appendChild(newOne)
-        }
+        /*   function addElement() {
+   
+   
+               //creating a div element 
+               const newDiv = document.createElement('div');
+   
+   
+               //and  give it some content 
+               const newContent = document.createTextNode('Hi guys how are u')
+   
+   
+               // add the text node to the newly created div
+              const newOne= newDiv.appendChild(newContent)
+               document.getElementById('div1').appendChild(newOne)
+           }*/
 
 
 
