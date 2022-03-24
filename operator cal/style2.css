@@ -1,0 +1,18 @@
+body{
+   
+    background-color: grey;
+}
+
+.container{
+   text-align: center;
+   margin-top: 200px;
+  
+   
+}
+input{
+  background-color: transparent;
+ color: white;
+}
+input:hover{
+    cursor: pointer;
+}
