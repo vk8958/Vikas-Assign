@@ -195,3 +195,10 @@ h5{
 .nav-link:hover{
     color: #cea18f;
 }
+.resume{
+    border: white 1px solid;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+   font-size: 15px;
+}
